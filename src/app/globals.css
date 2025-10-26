@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Americana";
+  src: url("/fonts/Americana Font Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------
+   Tailwind v4 inline theme tokens
+   ------------------------------ */
+@theme {
+  /* background surfaces */
+  --color-bg: #0a0a0a;
+  --color-bg-section: #111111;
+  --color-bg-card: #1a1a1a;
+  --color-light-background: #f4eedc;
+  --color-bg-light-background: rgb(239 235 226);
+  --color-dark-emphasis: rgb(96 109 97);
+  --color-bg-light-empashis: rgb(237 230 216);
+
+  /* accents */
+  --color-accent-gold: rgba(198 156 77);
+  --color-accent-muted: #8a8060;
+
+  /* text colors */
+  --color-base: rgb(52 62 53);
+  --color-dim: #cfcfcf;
+  --color-softer: #8f8f8f;
+  --color-dark: #1a1a1a;
+
+  /* borders / strokes */
+  --color-border-light: rgba(255, 255, 255, 0.4);
+  --color-border-gold: #c9b37a;
+}
+
+.font-americana {
+  font-family: "Americana", serif;
+}
+
+.display-2 {
+  font-family: "Americana", serif;
+  font-size: 1.25rem;
+  line-height: 1.375;
+  color: var(--color-accent-gold);
+}
+
+.display-3 {
+  font-family: "Americana", serif;
+  font-size: 1.75rem;
+  line-height: 1.375;
+  color: var(--color-accent-gold);
+}
+
+.display-4 {
+  font-family: "Americana", serif;
+  font-size: 1.75rem;
+  line-height: 1.375;
+  color: var(--color-accent-gold);
+}
+
+.display-5 {
+  font-family: "Americana", serif;
+  font-size: 1.5rem;
+  line-height: 1.375;
+  color: var(--color-accent-gold);
+}
+
+.display-6 {
+  font-family: "Americana", serif;
+  font-size: 1.25rem;
+  line-height: 1.375;
+  color: var(--color-base);
+}
+
+/* === Responsive scaling === */
+@media (min-width: 650px) {
+  .display-6 {
+    font-size: 1.125rem;
+  }
+  .display-5 {
+    font-size: 1.25rem;
+  }
+  .display-4 {
+    font-size: 1.625rem;
+  }
+  .display-4 {
+    font-size: 1.625rem;
+  }
+  .display-2 {
+    font-size: 2.1875rem;
+  }
+}
+
+@media (min-width: 1024px), (orientation: landscape) {
+  .display-6 {
+    font-size: 1.25rem;
+  }
+  .display-5 {
+    font-size: 1.5rem;
+  }
+  .display-4 {
+    font-size: 1.1875rem;
+  }
+  .display-3 {
+    font-size: 2.1875rem;
+  }
+  .display-2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px), (orientation: landscape) {
+  .display-5 {
+    font-size: 1.625rem;
+  }
+}
+
+/* ------------------------------
+   Animations / utilities
+   ------------------------------ */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Tailwind utility if you want a semantic class */
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.fade-up {
+  animation: fadeUp 0.6s ease-out both;
+}
+
+/* hide scrollbar utility for horizontal scrollers */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* optional shimmer animation for text gradient */
+.scroll-highlight-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--color-accent-gold) 0%,
+    rgba(201, 179, 122, 0.4) 50%,
+    rgba(201, 179, 122, 0.15) 100%
+  );
+  background-size: 200% 100%;
+  transition: background-position 1.2s ease-out;
+}
+
+/* === Global container spacing === */
+.app-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 1.5rem; /* 24px */
+}
+
+@media (min-width: 1024px), (orientation: landscape) {
+  .app-container {
+    padding-left: 4.5rem; /* 72px */
+    padding-right: 4.5rem; /* 72px */
+  }
+}
+
+@media (min-width: 1280px), (orientation: landscape) {
+  .app-container {
+    padding-left: 8rem; /* 128px */
+    padding-right: 8rem; /* 128px */
+  }
+}
+
+/* subtle gold shimmer when active */
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* ------------------------------
+   Global base styles
+   ------------------------------ */
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-base);
+  font-family: var(--font-inter), ui-sans-serif, system-ui;
+}

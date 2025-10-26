@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "heading": "Experience sustainable luxury amidst Bali’s lush jungle.",
+    "subheading": "Ulaman Eco Luxury Retreat",
+    "description": "Nestled among rice fields and coconut trees in Tabanan, only 20 minutes from Canggu.",
+    "backgroundImage": "/hero.jpg"
+  },
+  "villas": [
+    {
+      "id": "floating-lake",
+      "name": "Floating Lake",
+      "tagline": "A luxurious floating villa on our bio-filtered lake.",
+      "image": "/villa-floating.jpg"
+    },
+    {
+      "id": "cocoon-jungle",
+      "name": "Cocoon Jungle",
+      "tagline": "Exotic elegance meets cozy warmth.",
+      "image": "/villa-cocoon.jpg"
+    },
+    {
+      "id": "avatar-tree-house",
+      "name": "Avatar Tree House",
+      "tagline": "Avatar-inspired sky villa with 180° views.",
+      "image": "/villa-avatar.jpg"
+    },
+    {
+      "id": "grand-lagoon",
+      "name": "Grand Lagoon Private Pool",
+      "tagline": "Exclusive riverside villa with jungle lagoon view.",
+      "image": "/villa-lagoon.jpg"
+    }
+  ],
+  "packages": [
+    {
+      "id": "avatar-experience",
+      "title": "The Avatar Experience",
+      "duration": "3 Days / 2 Nights",
+      "image": "/pkg-avatar.jpg"
+    },
+    {
+      "id": "honeymoon",
+      "title": "The Ultimate Honeymoon",
+      "duration": "3 Days / 2 Nights",
+      "image": "/pkg-honeymoon.jpg"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Alsana Trawally",
+      "quoteTitle": "Best Experience In Bali.",
+      "quoteBody": "Best experience I had in Bali... customer service was impeccable and the staff were so kind. It's unbelievable that everything is made of bamboo.",
+      "date": "June 2024",
+      "ratingSource": "google"
+    },
+    {
+      "name": "Anne & Steve",
+      "quoteTitle": "If I Only Could Give 6 Stars.",
+      "quoteBody": "This is definitely one of the best resorts we’ve ever been at... the extraordinary architecture surrounds you the moment you walk inside.",
+      "date": "Feb 2023",
+      "ratingSource": "tripadvisor"
+    }
+  ],
+  "weeklySchedule": [
+    {
+      "time": "7 AM",
+      "activities": ["Yoga (All Levels)"]
+    },
+    {
+      "time": "12 PM",
+      "activities": ["Sound Healing"]
+    }
+  ],
+  "locationBlurb": {
+    "heading": "Tucked Within Majestic Balinese Nature.",
+    "text": "Strategically located near popular areas like Canggu and Ubud — peaceful, lush, and full of things to do."
+  }
+}
